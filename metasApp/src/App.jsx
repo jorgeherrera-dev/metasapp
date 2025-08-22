@@ -1,10 +1,14 @@
-import { useState } from 'react'
-import './App.css'
+import Encabezamiento from './componentes/compartidos/Encabezamiento'
+import Principal from './componentes/compartidos/Principal'
+import Pie from './componentes/compartidos/Pie'
+import './index.css'
 
 function App() {
   return (
     <div className="App">
-      <p>Hola, como te llamas?</p>
+      <Encabezamiento />
+      <Principal />
+      <Pie />
     </div>
   )
 }
