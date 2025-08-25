@@ -1,14 +1,25 @@
+import estilos from './Principal.module.css';
+import Vinculo from './Vinculo';
+import ListaSVG from '../../img/lista.svg?react';
+import NuevaSVG from '../../img/nueva.svg?react';
+
 function Principal({ children }) {
   return (
-    <>
-      <sidenav>
-        <a href="/lista">Lista</a>
-        <a href="/crear">Crear</a>
-      </sidenav>
-      <main>
+    <div className={estilos.principal}>
+      <aside className={estilos.aside}>
+        <Vinculo 
+           href="/lista" 
+           texto="Lista de Metas" 
+           Icono={ListaSVG} />
+        <Vinculo 
+           href="/crear" 
+           texto="Nueva Meta" 
+           Icono={NuevaSVG} />
+      </aside>
+      <main className="main">
         {children}
       </main>
-    </>
+    </div>
   );
 }
 

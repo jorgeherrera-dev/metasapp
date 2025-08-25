@@ -1,14 +1,17 @@
-import Encabezamiento from './componentes/compartidos/Encabezamiento'
+import Encabezado from './componentes/compartidos/Encabezado'
 import Principal from './componentes/compartidos/Principal'
 import Pie from './componentes/compartidos/Pie'
-import './index.css'
+import Meta from './componentes/lista/Metas'
+
 
 function App() {
   return (
     <div className="App">
-      <Encabezamiento />
-      <Principal />
-      <Pie />
+      <Encabezado></Encabezado>
+      <Principal>
+        <Meta></Meta>
+      </Principal>
+      <Pie></Pie>
     </div>
   )
 }
