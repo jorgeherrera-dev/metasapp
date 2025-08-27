@@ -1,0 +1,31 @@
+.tarjeta {
+    @apply rounded-xl m-4 text-gray-700 text-xs mx-4 bg-neumorph-bg shadow-neumorph-light;
+}
+
+.boton {
+    @apply text-sm font-bold py-1 px-4 rounded-full;
+}
+
+.boton--negro {
+  @apply text-white bg-gray-700 hover:bg-gray-800;
+  box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.2),
+    -5px -5px 10px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.boton--rojo {
+  @apply text-red-500 bg-gray-100 border border-red-500 hover:bg-red-500 hover:text-white;
+  box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.boton--gris {
+  @apply bg-gray-100 hover:bg-gray-200;
+  box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}

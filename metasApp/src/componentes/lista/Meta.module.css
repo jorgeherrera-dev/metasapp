@@ -1,0 +1,22 @@
+.meta {
+    @apply flex p-2 justify-between;
+}
+
+.icono {
+    @apply h-10 w-10 shadow-neumorph-inset rounded-full flex items-center justify-center text-xl; /* ← Usa la sombra inset que ya definiste */
+    background: #f7fafc; /* bg-gray-100 ≈ #f7fafc */
+}
+
+.barra1 {
+    @apply h-1 w-28 rounded bg-blue-200;
+    background: linear-gradient(145deg, #e6fffa, #bee3f8); /* Gradiente convexo */
+    box-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.1),
+        -2px -2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.barra2 {
+    @apply h-1 rounded;
+    background: linear-gradient(to left, #bee3f8, #48bb78); 
+    /* from-green-200 to-blue-500 corregido */
+}
