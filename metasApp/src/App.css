@@ -1,5 +1,5 @@
 .tarjeta {
-    @apply rounded-xl m-4 text-gray-700 text-xs mx-4 bg-neumorph-bg shadow-neumorph-light;
+    @apply rounded-xl m-4 text-gray-700 text-xs mx-4 bg-neumorph-bg shadow-neumorph-light overflow-hidden;
 }
 
 .boton {
@@ -27,5 +27,18 @@
   box-shadow: 
     5px 5px 10px rgba(0, 0, 0, 0.1),
     -5px -5px 10px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.label {
+  @apply block uppercase text-xs font-bold mb-6;
+}
+
+.input {
+  @apply w-full border rounded-xl bg-gray-100; /* Fondo gray-100 */
+  box-shadow: 
+    inset 3px 3px 6px rgba(0, 0, 0, 0.1),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.5);
+  border: 1px solid #e5e7eb; /* border-gray-200 */
   transition: all 0.3s ease;
 }
